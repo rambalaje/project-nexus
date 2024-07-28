@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="burger">
+            <li onclick="hideSidebar()" style="padding-left: 200px;padding-top: 100px;"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+            <li><a href="#" style="padding-top: 50px;">Home</a></li>
+            <li><a href="#" style="padding-top: 100px;">About</a></li>
+            <li><a href="#" style="padding-top: 150px;">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="a"><p style="font-size: larger;font-weight: 700;">Home</p></a></li>
+            <li><a href="#" class="a"><p style="font-size: larger;font-weight: 700;">About</p></a></li>
+            <li><a href="#" class="a"><p style="font-size: larger;font-weight: 700;">Contact</p></a></li>
+            <li onclick="showSidebar()" class="a1"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="login">
+            <div class="l1">Signup</div>
+            <form action="" id="form">
+                <div class="inputgroup">
+                    <div class="f1">Username:</div>
+                    <input type="text" placeholder="Enter your username" class="f2" id="username">
+                    <div class="error"></div>
+                </div>
+                <div class="inputgroup">
+                    <div class="f1">Email:</div>
+                    <input type="text" placeholder="Enter your email" class="f2" id="mailid">
+                    <div class="error"></div>
+                </div>
+                <div class="inputgroup">
+                    <div class="f1">Enter password:</div>
+                    <input type="password" placeholder="Enter new password" class="f2" id="password">
+                    <div class="error"></div>
+                </div>
+                <div class="inputgroup">
+                    <div class="f1">Confirm password:</div>
+                    <input type="password" placeholder="Confirm password" class="f2" id="confirm-password">
+                    <div class="error"></div>
+                </div>
+                <button class="submit">Signup</button>
+            </form>
+            <div class="bl">back to login page?<a  href="login.html" style="text-decoration: none;color: black;padding-left: 5px;">login</a></div>    
+        </div>
+    </div>
+
+</body>
+</html>
